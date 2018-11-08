@@ -1,7 +1,7 @@
 let friends = [
     {
         "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
+        "photo": "https://picsum.photos/200/300",
         "scores": [
             "5",
             "1",
@@ -65,7 +65,7 @@ let friends = [
     },
     {
         "name": "Lou Ritter",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkDAAAAJDhhZTI5NTk2LWQzZjUtNDJjZi1hMTM2LTQ3ZjNmYjE0YmY2NA.jpg",
+        "photo": "https://picsum.photos/200/300",
         "scores": [
             "4",
             "3",
@@ -81,7 +81,7 @@ let friends = [
     },
     {
         "name": "Jordan Biason",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAisAAAAJGUxYzc4YzA0LWQxMzUtNGI4NS04YTFiLTkwYzM0YTZkNzA2NA.jpg",
+        "photo": "https://picsum.photos/200/300",
         "scores": [
             "4",
             "4",
@@ -96,8 +96,8 @@ let friends = [
         ]
     },
     {
-        "name": "test",
-        "photo": "test",
+        "name": "Justin Brown",
+        "photo": "https://picsum.photos/200/300",
         "scores": [
             "2",
             "4",

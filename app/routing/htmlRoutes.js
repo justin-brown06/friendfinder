@@ -1,5 +1,7 @@
+//Dependencies
 const path = require("path");
 
+//Routing
 module.exports = function(app) { 
     //Send user to home page on load
     app.get("/", function(req, res) {
