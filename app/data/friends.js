@@ -1,6 +1,6 @@
 let friends = [
     {
-        "name": "Ahmed",
+        "name": "Nick Beaudry",
         "photo": "https://picsum.photos/200/300",
         "scores": [
             "5",
@@ -16,7 +16,7 @@ let friends = [
         ]
     },
     {
-        "name": "Jacob Deming",
+        "name": "Emily Brown",
         "photo": "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
         "scores": [
             "4",
@@ -32,7 +32,7 @@ let friends = [
         ]
     },
     {
-        "name": "Jeremiah Scanlon",
+        "name": "Dakota Howard",
         "photo": "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
         "scores": [
             "5",
@@ -48,7 +48,7 @@ let friends = [
         ]
     },
     {
-        "name": "Louis T. Delia",
+        "name": "Johann Meister",
         "photo": "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
         "scores": [
             "3",
@@ -64,23 +64,23 @@ let friends = [
         ]
     },
     {
-        "name": "Lou Ritter",
+        "name": "Gehrig Rankin",
         "photo": "https://picsum.photos/200/300",
         "scores": [
             "4",
-            "3",
+            "2",
             "4",
             "1",
-            "5",
+            "3",
             "2",
-            "5",
+            "1",
             "3",
             "1",
             "4"
         ]
     },
     {
-        "name": "Jordan Biason",
+        "name": "Ben Laney",
         "photo": "https://picsum.photos/200/300",
         "scores": [
             "4",
