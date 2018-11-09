@@ -80,7 +80,7 @@ let friends = [
         ]
     },
     {
-        "name": "Ben Laney",
+        "name": "Tucker Beauchamp",
         "photo": "https://picsum.photos/200/300",
         "scores": [
             "4",
