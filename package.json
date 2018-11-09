@@ -20,6 +20,7 @@
   "homepage": "https://github.com/justin-brown06/friendfinder#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
   }
 }

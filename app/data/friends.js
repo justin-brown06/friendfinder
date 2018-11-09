@@ -1,116 +1,36 @@
-let friends = [
-    {
-        "name": "Nick Beaudry",
-        "photo": "https://picsum.photos/200/300",
-        "scores": [
-            "5",
-            "1",
-            "4",
-            "4",
-            "5",
-            "1",
-            "2",
-            "5",
-            "4",
-            "1"
-        ]
-    },
-    {
-        "name": "Emily Brown",
-        "photo": "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
-        "scores": [
-            "4",
-            "2",
-            "5",
-            "1",
-            "3",
-            "2",
-            "2",
-            "1",
-            "3",
-            "2"
-        ]
-    },
-    {
-        "name": "Dakota Howard",
-        "photo": "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
-        "scores": [
-            "5",
-            "2",
-            "2",
-            "2",
-            "4",
-            "1",
-            "3",
-            "2",
-            "5",
-            "5"
-        ]
-    },
-    {
-        "name": "Johann Meister",
-        "photo": "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
-        "scores": [
-            "3",
-            "3",
-            "4",
-            "2",
-            "2",
-            "1",
-            "3",
-            "2",
-            "2",
-            "3"
-        ]
-    },
-    {
-        "name": "Gehrig Rankin",
-        "photo": "https://picsum.photos/200/300",
-        "scores": [
-            "4",
-            "2",
-            "4",
-            "1",
-            "3",
-            "2",
-            "1",
-            "3",
-            "1",
-            "4"
-        ]
-    },
-    {
-        "name": "Tucker Beauchamp",
-        "photo": "https://picsum.photos/200/300",
-        "scores": [
-            "4",
-            "4",
-            "2",
-            "3",
-            "2",
-            "2",
-            "3",
-            "2",
-            "4",
-            "5"
-        ]
-    },
-    {
-        "name": "Justin Brown",
-        "photo": "https://picsum.photos/200/300",
-        "scores": [
-            "2",
-            "4",
-            "3",
-            "3",
-            "4",
-            "5",
-            "2",
-            "3",
-            "1",
-            "3"
-        ]
+const mysql = require("mysql");
+
+let friends = [];
+
+var connection = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "root",
+    database: "friendfinder_db"
+  });
+  
+  connection.connect(function(err) {
+    if (err) {
+      console.error("error connecting: " + err.stack);
+      return;
     }
-];
+  
+    console.log("connected as id " + connection.threadId);
+  });
+
+  connection.query("SELECT * FROM friends;", function(err, data) {
+      if (err) throw (err);
+      
+      data.forEach(function(data) {
+          friends.push({
+              "name": data.name,
+              "photo": data.profile_pic,
+              "scores": [data.qOne, data.qTwo, data.qThree, data.qFour, data.qFive, data.qSix, data.qSeven, data.qEight, data.qNine, data.qTen]
+            })
+        })
+
+  });
+
 
 module.exports = friends;
